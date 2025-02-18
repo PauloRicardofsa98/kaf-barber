@@ -7,7 +7,6 @@ import { Input } from "@/app/_components/ui/input";
 
 import BarbershopItem from "./_components/barbershop-item";
 import BookingItem from "./_components/booking-item";
-import { Card, CardContent } from "./_components/ui/card";
 import { quickSearchOptions } from "./_constants/quick-search";
 import { db } from "./_lib/prisma";
 
@@ -76,16 +75,6 @@ const HomePage = async () => {
           ))}
         </div>
       </div>
-
-      <footer>
-        <Card>
-          <CardContent className="px-5 py-5">
-            <p className="text-sm text-gray-400">
-              © 2025 Copyright <span className="font-bold"> Kaf Barber</span>
-            </p>
-          </CardContent>
-        </Card>
-      </footer>
     </div>
   );
 };
